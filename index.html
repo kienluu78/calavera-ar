@@ -3,28 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calavera AR · Privacy</title>
-  <meta name="description" content="Calavera AR keeps the camera, microphone, and saved pictures on your phone.">
+  <title>Calavera AR</title>
+  <meta name="description" content="Calavera AR paints a calavera on your face. The camera, microphone, and saved pictures stay on your phone.">
+  <meta name="robots" content="index,follow">
   <style>
     :root { color-scheme: light; }
     html, body { margin: 0; background: #FAF8F5; color: #1B2A4A; }
     body { font-family: Georgia, "Iowan Old Style", Palatino, serif; line-height: 1.5; }
-    main { max-width: 38rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
-    img { width: 5.5rem; height: 5.5rem; border-radius: 1.2rem; display: block; }
+    main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    .mark { width: 5.5rem; height: 5.5rem; border-radius: 1.2rem; display: block; }
     h1 { font-size: 2rem; line-height: 1.15; margin: 1rem 0 0.25rem; }
     .kicker { letter-spacing: 0.08em; text-transform: uppercase; font-family: "Avenir Next", Futura, sans-serif; font-size: 0.75rem; color: #5C6578; margin: 0; }
     h2 { font-size: 1.15rem; margin: 2rem 0 0.4rem; }
     p, li { font-size: 1.05rem; }
     a { color: #0D6B6B; }
+    .status { background: #fff; border: 1px solid #E4DFD6; border-radius: 0.6rem; padding: 0.7rem 0.9rem; }
+    .shots { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.7rem; margin-top: 0.8rem; }
+    .shots figure { margin: 0; }
+    .shots img { width: 100%; height: auto; border-radius: 0.7rem; display: block; }
+    .shots figcaption { font-family: "Avenir Next", Futura, sans-serif; font-size: 0.78rem; color: #5C6578; margin-top: 0.35rem; }
     footer { margin-top: 2.5rem; color: #5C6578; font-size: 0.95rem; }
+    @media (max-width: 640px) {
+      .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
   </style>
 </head>
 <body>
   <main>
-    <img src="icon.png" alt="Calavera AR">
-    <p class="kicker">Privacy and support</p>
+    <img class="mark" src="icon.png" alt="Calavera AR">
+    <p class="kicker">iPhone app</p>
     <h1>Calavera AR</h1>
-    <p>Calavera AR paints a calavera on your face with the front camera. You can roll a new one, save a picture, or record a video.</p>
+    <p>Calavera AR paints a calavera on your face with the front camera. The mask follows your face, including when you wear glasses. Roll a new one, save a picture, or record a video.</p>
+    <p class="status">Submitted to the App Store. It is not on the store yet.</p>
+
+    <h2>On a call</h2>
+    <p>Share your screen from the other app. The mask stays on the screen while you talk. Calavera AR does not run the call.</p>
 
     <h2>What stays on your phone</h2>
     <ul>
@@ -34,11 +47,28 @@
       <li>There is no account. Nothing is uploaded to us. We do not track you.</li>
     </ul>
 
-    <h2>Screen share</h2>
-    <p>If you share your screen during a call in another app, that app sends whatever is on the screen. Calavera AR does not run the call.</p>
-
     <h2>Privacidad</h2>
-    <p>Calavera AR pinta una calavera en tu cara con la cámara frontal. La imagen se procesa en el teléfono. El micrófono se usa solo al grabar un video. Una foto o un video se guarda en tu fototeca solo cuando tú lo pides. No hay cuenta y no subimos nada.</p>
+    <p>Calavera AR pinta una calavera en tu cara con la cámara frontal. La máscara sigue tu cara, también con lentes. La imagen se procesa en el teléfono. El micrófono se usa solo al grabar un video. Una foto o un video se guarda en tu fototeca solo cuando tú lo pides. No hay cuenta y no subimos nada.</p>
+
+    <h2>Pictures</h2>
+    <div class="shots">
+      <figure>
+        <img src="shots/01-front.jpg" alt="Front view, the calavera on the face.">
+        <figcaption>Front</figcaption>
+      </figure>
+      <figure>
+        <img src="shots/02-front-glasses.jpg" alt="Front view with glasses. The mask follows the face.">
+        <figcaption>Front, glasses on</figcaption>
+      </figure>
+      <figure>
+        <img src="shots/03-side-glasses.jpg" alt="Side view with glasses. The mask stays with the face.">
+        <figcaption>Side, glasses on</figcaption>
+      </figure>
+      <figure>
+        <img src="shots/04-side.jpg" alt="Side view. The mask follows the turn of the face.">
+        <figcaption>Side</figcaption>
+      </figure>
+    </div>
 
     <h2>The launch picture</h2>
     <p>The launch picture is drawn from an engraving by José Guadalupe Posada.</p>
